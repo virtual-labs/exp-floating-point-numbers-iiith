@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<title>Floating Point Representation</title>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/floating.css">
+    <link rel="stylesheet" type="text/css" href="../css/co.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div id="main-heading">Floating Point Numbers Representation Simulator</div>
+    <ul class="sidenav">
+        <li><a href="../index.html">Decimal to Floating point</a></li>
+        <li><a class="active">Floating Point Numbers</a></li>
+    </ul>
+    <div class="content">
+        <div class="flex-container">
+            <div class="user_enters">
+                <div class="col-25">
+                    <label for="fname">Floating Number  </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="input-decimal" name="Decimal" placeholder="Enter the Number">
+                </div>
+            </div>
+            <span class="br"></span>
+            <div class="buttons">
+                <input onclick="convert(0)" id="number" type="button" value="Submit">
+                <span class="cond"></span>
+                <input onclick="hello(0)" id="number" type="button" value="Reset">
+            </div>
+        </div>
+    </div>
+    <span class="br"></span>
+    <div class="boxee">
+        <form action="">
+            <div class="line-container">
+                <span class="line arrow-right"></span>
+
+            </div>
+        </form>
+        <span class="brl"></span>
+        <form action="">
+            <div class="line-container">
+                <span class="line arrow-right"></span>
+            </div>
+        </form>
+        <span class="brl"></span>
+        <form action="">
+            <div class="line-container">
+                <span class="line arrow-right"></span>
+            </div>
+        </form>
+        <div class="bit-table m-auto pt-5">
+            <table align="right" id="four-bit-table">
+                <thead>
+                    <tr>
+                        <th scope="col" id="me">Exponent</th>
+                        <th id="ef" scope="col">Manitissa</th>
+                        <th scope="col">No zero</th>
+                        <th scope="col">Abrupt</th>
+                        <th id="ab" scope="col">Denorm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id = "r1">
+                        <td id="101">00</td>
+                        <td id="102">00</td>
+                        <td id="103">0.500</td>
+                        <td id="104">0</td>
+                        <td id="105">0</td>
+                    </tr>
+                    <tr id = "r2">
+                        <td id="201">00</td>
+                        <td id="202">01</td>
+                        <td id="203">0.625</td>
+                        <td id="204">0</td>
+                        <td id="205">0.250</td>
+                    </tr>
+                    <tr id = "r3">
+                        <td id="301">00</td>
+                        <td id="302">10</td>
+                        <td id="303">0.750</td>
+                        <td id="304">0</td>
+                        <td id="305">0.500</td>
+                    </tr>
+                    <tr id = "r4">
+                        <td id="401">00</td>
+                        <td id="402">11</td>
+                        <td id="403">0.875</td>
+                        <td id="404">0</td>
+                        <td id="405">0.750</td>
+                    </tr>
+                    <tr id = "r5">
+                        <td id="501">01</td>
+                        <td id="502">00</td>
+                        <td id="503">1.000</td>
+                        <td id="504">1.000</td>
+                        <td id="505">1.000</td>
+                    </tr>
+                    <tr id = "r6">
+                        <td id="601">01</td>
+                        <td id="602">01</td>
+                        <td id="603">1.250</td>
+                        <td id="604">1.250</td>
+                        <td id="605">1.250</td>
+                    </tr>
+                    <tr id = "r7">
+                        <td id="701">01</td>
+                        <td id="702">10</td>
+                        <td id="703">1.500</td>
+                        <td id="704">1.500</td>
+                        <td id="705">1.500</td>
+                    </tr>
+                    <tr id = "r8">
+                        <td id="801">01</td>
+                        <td id="802">11</td>
+                        <td id="803">1.750</td>
+                        <td id="804">1.750</td>
+                        <td id="805">1.750</td>
+                    </tr>
+                    <tr id = "r9">
+                        <td id="901">10</td>
+                        <td id="902">00</td>
+                        <td id="903">2.000</td>
+                        <td id="904">2.000</td>
+                        <td id="905">2.000</td>
+                    </tr>
+                    <tr id = "r10">
+                        <td id="1001">10</td>
+                        <td id="1002">01</td>
+                        <td id="1003">2.500</td>
+                        <td id="1004">2.500</td>
+                        <td id="1005">2.500</td>
+                    </tr>
+                    <tr id = "r11">
+                        <td id="1101">10</td>
+                        <td id="1102">10</td>
+                        <td id="1103">3.000</td>
+                        <td id="1104">3.000</td>
+                        <td id="1105">3.000</td>
+                    </tr>
+                    <tr id = "r12">
+                        <td id="1201">10</td>
+                        <td id="1202">11</td>
+                        <td id="1203">3.500</td>
+                        <td id="1204">3.500</td>
+                        <td id="1205">3.500</td>
+                    </tr>
+                    <tr id = "r13">
+                        <td id="1301">11</td>
+                        <td id="1302">00</td>
+                        <td id="1303">Infinity</td>
+                        <td id="1304">Infinity</td>
+                        <td id="1305">Infinity</td>
+                    </tr>
+                    <tr id = "r14">
+                        <td id="1401">11</td>
+                        <td id="1402">01</td>
+                        <td id="1403">Nan</td>
+                        <td id="1404">Nan</td>
+                        <td id="1405">Nan</td>
+                    </tr>
+                    <tr id = "r15">
+                        <td id="1501">11</td>
+                        <td id="1502">10</td>
+                        <td id="1503">Nan</td>
+                        <td id="1504">Nan</td>
+                        <td id="1505">Nan</td>
+                    </tr>
+                    <tr id = "r16">
+                        <td id="1601">11</td>
+                        <td id="1602">11</td>
+                        <td id="1603">Nan</td>
+                        <td id="1604">Nan</td>
+                        <td id="1605">Nan</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="taginfo">
+	        <span class="dotG"></span> <label>Normalised</label>
+	        <span class="hrl"></span>
+	        <span class="dotB"></span> <label> De-Normalised</label>
+	    </div>
+    </div>
+    <script src="../js/floating-point.js"></script>
+</body>
+
+</html>

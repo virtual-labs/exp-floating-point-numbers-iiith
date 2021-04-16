@@ -1,236 +1,410 @@
-
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
 }
 
-#main-heading
-{
-  font-family:Sans-serif;
-  color: #288EC8;
-  font-size: 1.7vw;
-  text-align: center;
+#main-heading {
+    font-family: Sans-serif;
+    color: #288EC8;
+    font-size: 1.7vw;
+    text-align: center;
 }
-ul.sidenav{
-	background-color: rgb(164, 198, 82);/*#28a745;*/
-	list-style-type: none;
+
+ul.sidenav {
+    background-color: rgb(164, 198, 82);
+    /*#28a745;*/
+    list-style-type: none;
     padding: 0;
     width: 100%;
     height: auto;
     position: relative;
     overflow: auto;
 }
+
 ul.sidenav li a {
-  display: block;
-  color: #000;
-  padding: 8px 16px;
-  text-decoration: none;
-  font-size:1vw;
-  color: white;
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 1vw;
+    color: white;
 }
- 
+
 ul.sidenav li a.active {
-  background-color: #4CAF50;
-  color: white;
+    background-color: #4CAF50;
+    color: white;
 }
 
 ul.sidenav li a:hover:not(.active) {
-  background-color: #A9A9A9;
-  color: white;
-}
-.content{
-  margin-left: 5%;
-  padding: 1px 16px;
-  height: 100%;
+    background-color: #A9A9A9;
+    color: white;
 }
 
-.br
-{
- display: block;
- margin-bottom: 1em;
-}
-#number
-{
-  width:80px; height:60px;
-  background-color: #288EC8;
-  border-radius: 1.5em;
-  border: none;
-  margin-left: 10%;
-  color: white;
-}
-#number:hover{background-color:#A9A9A9; }
-.flex-container{
-	display: flex;
-}
-.mflex-container{
-  display: flex;
+.content {
+    margin-left: 5%;
+    padding: 1px 16px;
+    height: 100%;
 }
 
-.user_enters{width: 40%;padding:5px;}
-#result-container{
-	width: 80%;
-	padding:5px;
-  margin-top: -1%;
-  margin-left: 2%;
-  padding-left:2%;
-  font-size:0;
+.br {
+    display: block;
+    margin-bottom: 1em;
 }
 
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
+#number {
+    width: 80px;
+    height: 60px;
+    background-color: #288EC8;
+    border-radius: 1.5em;
+    border: none;
+    margin-left: 10%;
+    color: white;
 }
+
+#number:hover {
+    background-color: #A9A9A9;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.mflex-container {
+    display: flex;
+}
+
+.user_enters {
+    width: 40%;
+    padding: 5px;
+}
+
+#result-container {
+    width: 80%;
+    padding: 5px;
+    margin-top: -1%;
+    margin-left: 2%;
+    padding-left: 2%;
+    font-size: 0;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
 label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
+    padding: 12px 12px 12px 0;
+    display: inline-block;
 }
 
-#result
-{
-  padding-left:15%;
-  color:  #288EC8;
-  font-weight: bold;
-  font-size:1.5vw;
+#result {
+    padding-left: 15%;
+    color: #288EC8;
+    font-weight: bold;
+    font-size: 1.5vw;
 }
-.container {border-radius: 5px;padding: 20px;}
-.rowf,.frowf{padding-left: 5px;width: 50%;font-size:0;}
-.adj-res{font-size:0;}
+
+.container {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.rowf,
+.frowf {
+    padding-left: 5px;
+    width: 50%;
+    font-size: 0;
+}
+
+.adj-res {
+    font-size: 0;
+}
 
 .col-25 {
-  width: 50%;
-  margin-top: 6px;
-  font-weight:bold;
-  font-family: Verdana,Sans-serif;
-  font-size:1vw;
+    width: 50%;
+    margin-top: 6px;
+    font-weight: bold;
+    font-family: Verdana, Sans-serif;
+    font-size: 1vw;
 }
-.col-35,.mcol-35 {
-  width: 80%;
-  margin-top: 6px;
-  font-family: Verdana,Sans-serif;
-  font-size:1.3vw;
-  font-weight:bold;
 
+.col-35,
+.mcol-35 {
+    width: 80%;
+    margin-top: 6px;
+    font-family: Verdana, Sans-serif;
+    font-size: 1.3vw;
+    font-weight: bold;
 }
-.col-75{
+
+.col-75 {
     width: 50%;
     margin-top: 6px;
 }
 
-#eight-bit,#fractional,#integral,#answer,#normalised,#signvalue,#biasvalue,#mantissvalue,#exponevalue
-{
-
-    height:20px;
-    font-size:14pt;
+#fractional,
+#integral,
+#answer,
+#normalised,
+#signvalue,
+#biasvalue,
+#mantissvalue,
+#exponevalue {
+    height: 20px;
+    font-size: 14pt;
     max-width: fit-content;
     border-width: 2px;
     border-color: #288EC8;
-    width:65%;
+    width: 65%;
 }
+
+#eightrep {
+    font-size: 14pt;
+    width: 65%;
+    height: 20px;
+    max-width: fit-content;
+}
+
+
 /* Clear floats after the columns */
+
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
-@media screen and (max-width: 1400px) and (min-width: 901px){
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-    font-size:1.4vw;
-   }
-   ul.sidenav {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  
-  ul.sidenav li a {
-    float: left;
-    padding: 15px;
-    font-size:1.2vw
-  }
+@media screen and (max-width: 1400px) and (min-width: 901px) {
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+        font-size: 1.4vw;
+    }
+    ul.sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    ul.sidenav li a {
+        float: left;
+        padding: 15px;
+        font-size: 1.2vw
+    }
+    #eightrep,
+    #fractional,
+    #integral,
+    #answer,
+    #normalised,
+    #signvalue,
+    #biasvalue,
+    #mantissvalue,
+    #exponevalue {
+        font-size: 13px;
+        width:90%;
+    }
 }
-@media screen and (max-width: 900px ) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-    font-size:3vw;
-   }
 
-  #main-heading{
-		font-size:3vw;
-	}
-  ul.sidenav {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  
-  ul.sidenav li a {
-    float: left;
-    padding: 15px;
-    font-size:2.3vw
-  }
-  #result, .col-35,.mcol-35{
-    font-size:2vw;
-  }
-  .cond{
-  	display:block;
-  	margin-bottom: 3em;
-  }
-  .content {margin-left: 0;}
-  #eight-bit,#fractional,#integral,#answer,#normalised,#signvalue,#biasvalue,#mantissvalue,#exponevalue
-  {font-size:14px;}
+@media screen and (max-width: 900px) {
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+        font-size: 3vw;
+    }.col-25{font-size: 2vw;width: 90%}
+    #main-heading {
+        font-size: 3vw;
+    }
+    ul.sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    ul.sidenav li a {
+        float: left;
+        padding: 15px;
+        font-size: 2.3vw
+    }
+    #result,
+    .col-35,
+    .mcol-35 {
+        font-size: 2vw;
+    }
+    .cond {
+        display: block;
+        margin-bottom: 3em;
+    }
+    .content {
+        margin-left: 0;
+    }
+    #eightrep,
+    #fractional,
+    #integral,
+    #answer,
+    #normalised,
+    #signvalue,
+    #biasvalue,
+    #mantissvalue,
+    #exponevalue {
+        font-size: 13px;
+        width:90%;
+    }
 }
 
 @media screen and (max-width: 450px) {
-	.flex-container{display: block;}
-	.both-inputs{display: flex;}
-	.mflex-container{padding-left:2px;}
-	.adj-res{display:flex;line-height: 0.8;clear: both;margin:-1%;}
-	.frowf{margin-top:-8%;padding-left:2.7%;line-height: 0;width: 100%;}
-	.hr{display: block;margin-bottom: 1em;}
-	.content{margin-left: 0;padding:0px 0px;}
-	.user_enters{padding-left: 1px;width:70%;}
-	.cond{display:none;}
-	#result-container{width: 100%;padding-top: 0;}
-	.rowf{width: 100%;margin-top:-2%;padding-top:0;line-height: 0;}
-	.col-25, input[type=submit] {
-	width: 73%;
-	margin-top: 0;
-	font-size:3.3vw;
-	height:70%;
-	font-weight: normal;
-  }
-  .col-75{width:100%;}
-  #number{width:16vw; height:8vw;font-size:4vw}
-  #input-decimal{height:50px;}
-  #main-heading{font-size:5vw;margin-top:-4%;}
-  ul.sidenav li a {
-    text-align: center;
-    float: none;
-    font-size:4vw
-  }
-  #result{font-size:5.3vw;padding-left: 0;}
-  .col-35{font-size:3.3vw;width: 60%;line-height: 0.9}
-  .mcol-35{font-size:3vw;width: 40%;line-height: 0.8}
-  .col-95{width:70%;}
-  #eight-bit{margin-bottom:8%;font-size:3.5vw;margin-top:8%}
-  #fractional,#integral,#answer,#normalised,#signvalue,#biasvalue,#mantissvalue,#exponevalue
-  {font-size:3.5vw;margin-top:8%}
-
+    .flex-container {
+        display: block;
+    }
+    .both-inputs {
+        display: flex;
+    }
+    .mflex-container {
+        padding-left: 2px;
+    }
+    .adj-res {
+        display: flex;
+        line-height: 0.8;
+        clear: both;
+        margin: -1%;
+    }
+    .frowf {
+        margin-top: -8%;
+        padding-left: 2.7%;
+        line-height: 0;
+        width: 100%;
+    }
+    .hr {
+        display: block;
+        margin-bottom: 1em;
+    }
+    .content {
+        margin-left: 0;
+        padding: 0px 0px;
+    }
+    .user_enters {
+        padding-left: 1px;
+        width: 70%;
+    }
+    .cond {
+        display: none;
+    }
+    #result-container {
+        width: 100%;
+        padding-top: 0;
+    }
+    .rowf {
+        width: 100%;
+        margin-top: -2%;
+        padding-top: 0;
+        line-height: 0;
+    }
+    .col-25,
+    input[type=submit] {
+        width: 63%;
+        margin-top: 0;
+        font-size: 3.3vw;
+        height: 60%;
+        font-weight: normal;
+    }
+    .col-75 {
+        width: 100%;
+    }
+    #number {
+        width: 16vw;
+        height: 8vw;
+        font-size: 3.8vw
+    }
+    #input-decimal {
+        height: 45px;
+    }
+    #main-heading {
+        font-size: 5vw;
+        margin-top: -4%;
+    }
+    ul.sidenav li a {
+        text-align: center;
+        float: none;
+        font-size: 4vw
+    }
+    #result {
+        font-size: 5.3vw;
+        padding-left: 0;
+    }
+    .col-35 {
+        font-size: 3.3vw;
+        width: 60%;
+        line-height: 0.9
+    }
+    .mcol-35 {
+        font-size: 3vw;
+        width: 40%;
+        line-height: 0.8
+    }
+    .col-95 {
+        width: 70%;
+    }
+    #eightrep {
+        margin-bottom: 8%;
+        font-size: 3.5vw;
+        margin-top: 3.5%
+    }
+    #fractional,
+    #integral,
+    #answer,
+    #normalised,
+    #signvalue,
+    #biasvalue,
+    #mantissvalue,
+    #exponevalue {
+        font-size: 3vw;
+        margin-top: 8%
+    }
 }
+@media screen and (max-width: 396px){
+    #input-decimal,#input-exponent {
+        height: 7%;
+        width: 160%;
+        margin-top: 10%;
+    }
+    .col-25{width:190%}
+} 
 @media screen and (max-width: 240px) {
-	.user-inputs{width: 100%}
-	.row{display: flex}
-  #number{width:40px; height:20px;font-size:1vh;}
-  .col-35{font-size:3.8vw;width: 60%;line-height: 0.9}
-  .mcol-35{font-size:3.5vw;width: 40%;line-height: 0.8}
-  .col-25{font-size: 4vw;}
-  input[type=text],#input-decimal{height:10%;font-size:5vw}
-  .mflex-container{display:block;}
-
+    .user-inputs {
+        width: 100%
+    }
+    .row {
+        display: flex
+    }
+    #number {
+        width: 40px;
+        height: 20px;
+        font-size: 1vh;
+    }
+    .col-35 {
+        font-size: 3.8vw;
+        width: 60%;
+        line-height: 0.9
+    }
+    .mcol-35 {
+        font-size: 3.5vw;
+        width: 40%;
+        line-height: 0.8
+    }
+    .col-25 {
+        font-size: 4vw;
+    }
+    input[type=text],
+    #input-decimal {
+        height: 10%;
+        font-size: 5vw
+    }
+    .mflex-container {
+        display: block;
+    }
 }
