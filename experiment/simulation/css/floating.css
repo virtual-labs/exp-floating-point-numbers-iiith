@@ -2,6 +2,10 @@
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
 }
+.container {
+    border-radius: 5px;
+    padding: 20px;
+}
 
 #main-heading {
     font-family: Sans-serif;
@@ -355,6 +359,9 @@ table th {
     .user-inputs {
         width: 100%
     }
+    #main-heading{
+        font-size:4vw;
+    }
     #number {
         width: 52px;
         height: 20px;
@@ -377,4 +384,13 @@ table th {
         width:95%;
     }
     .hrl{margin-left: 0.5em;}
+}
+@media screen and (max-width: 300px) {
+    table{
+        width: 85%;
+        font-size:2.5vw;
+        height: 100%;
+    }
+    .dotG,.dotB{margin-left:-7%;}
+
 }
