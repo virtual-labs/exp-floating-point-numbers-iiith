@@ -49,23 +49,15 @@ ul.sidenav li a:hover:not(.active) {
     margin-right: 3%;
 }
 
-.user_enters {
-    display: flex;
-}
+.user_enters {display: flex; padding-top: 3%;}
 
-.br {
-    display: block;
-    margin-bottom: 1em;
-}
-
-.brl {
-    display: block;margin-bottom: 5em;}
+.br {display: block;margin-bottom: 1em;}
+.brl {display: block;margin-bottom: 5em;}
 .hrl{ display: block; margin-left: 4em; }
 
 .line-container {
     display: flex;
     width: 35%;
-    /* margin: 20px auto; */
 }
 
 .line {
@@ -178,20 +170,17 @@ table th {
         margin-right: 3%;
     }
     .taginfo{
-    display: flex;
     margin-top: 22%;
     margin-left: 52%;
     }
 }
 @media screen and (max-width: 1546px) and (min-width: 1424px){
     .taginfo{
-    display: flex;
     margin-top: 25%;
     margin-left: 52%;
     }}
 @media screen and (max-width: 1423px)and (min-width: 1391px){
     .taginfo{
-    display: flex;
     margin-top: 27%;
     margin-left: 52%;
     }
@@ -204,7 +193,6 @@ table th {
         margin-right: 3%;
     }
     .taginfo{
-    display: flex;
     margin-top: 30%;
     margin-left: 52%;
     }
@@ -217,25 +205,28 @@ table th {
         margin-right: 3%;
     }
     .taginfo{
-    display: flex;
     margin-top: 33%;
     margin-left: 52%;
     }
 }
 
-@media screen and (max-width: 970px) and (min-width: 813px) {
+@media screen and (max-width: 970px) and (min-width: 931px) {
     table {
         width: 45%;
         margin-top: -23%;
         margin-right: 3%;
     }
     .taginfo{
-    display: flex;
     margin-top: 37%;
     margin-left: 52%;
     }
 }
-
+@media screen and (max-width: 930px) and (min-width: 800px){
+    .taginfo{
+        margin-top: 43%;
+    margin-left: 52%;
+    }
+}
 @media screen and (max-width: 812px) and (min-width: 801px) {
     table {
         width: 45%;
@@ -297,7 +288,6 @@ table th {
         padding-right: 1%;
     }
     .taginfo{
-    display: flex;
     margin-top: 39%;
     margin-left: 52%;
     }
@@ -313,6 +303,7 @@ table th {
         margin-top: 4%;
         width: 90%;
         margin-right: 3%;
+        font-size:3.3vw;
     }
     .line-container {
         width: 100%;
@@ -355,31 +346,35 @@ table th {
         float: none;
         font-size: 3.3vw
     }.taginfo{
-    display: flex;
     margin-top: 39%;
     margin-left: 14%;
     }
 }
 
-@media screen and (max-width: 319px) {
+@media screen and (max-width: 332px) {
     .user-inputs {
         width: 100%
     }
     #number {
-        width: 40px;
+        width: 52px;
         height: 20px;
         font-size: 1vh;
     }
-    .col-25 {
+    .col-25,label {
         font-size: 4vw;
     }
     input[type=text] {
-        height: 10%;
-        font-size: 5vw
+        height: 80%;
+        font-size: 2.6vw
     }
     table {
         margin-top: 4%;
-        width: 100%;
+        width: 90%;
         margin-right: 3%;
+        font-size: 3vw;
     }
+    .line-container{
+        width:95%;
+    }
+    .hrl{margin-left: 0.5em;}
 }
