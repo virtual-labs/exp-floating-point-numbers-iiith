@@ -217,9 +217,15 @@ function convert(flg)
                 mantissa += '0'
             }
         }
+        if(cnt2 > exp)
+        {
+            temp = ""
+            for(let i = 0; i < exp; i++)
+                temp += bin_expone[i]
+            bin_expone = temp
+        }
         let bit_rep = ""
         bit_rep =  sign_box + bin_expone + bin_mantissa
-        // console.log(bit_rep)
         if(flg == 1){
             document.getElementById("8-bit label").innerHTML = "8-bit binary"
             let tbl=document.getElementById("eightrep");

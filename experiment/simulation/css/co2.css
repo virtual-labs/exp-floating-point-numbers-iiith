@@ -212,8 +212,7 @@ label {
 }
 
 @media screen and (max-width: 900px) {
-    .col-75,
-    input[type=submit] {
+    .col-75 {
         width: 100%;
         margin-top: 0;
         font-size: 3vw;
@@ -231,7 +230,7 @@ label {
         padding: 15px;
         font-size: 2.3vw
     }
-    #result,
+    #result,#input-decimal,#input-exponent 
     .col-35,
     .mcol-35 {
         font-size: 2vw;
@@ -320,8 +319,9 @@ label {
         height: 8vw;
         font-size: 3.8vw
     }
-    #input-decimal {
+    #input-decimal,#input-exponent {
         height: 45px;
+        width:140%;
     }
     #main-heading {
         font-size: 5vw;
@@ -371,6 +371,7 @@ label {
         height: 7%;
         width: 160%;
         margin-top: 10%;
+        font-size:2.5vw;
     }
     .col-25{width:190%}
 } 
@@ -384,7 +385,7 @@ label {
     #number {
         width: 40px;
         height: 20px;
-        font-size: 1vh;
+        font-size: 0.65vh;
     }
     .col-35 {
         font-size: 3.8vw;
@@ -400,9 +401,10 @@ label {
         font-size: 4vw;
     }
     input[type=text],
-    #input-decimal {
+    #input-decimal,#input-exponent {
         height: 10%;
-        font-size: 5vw
+        font-size: 4vw;
+        width:255%;
     }
     .mflex-container {
         display: block;
