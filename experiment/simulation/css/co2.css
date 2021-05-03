@@ -87,19 +87,21 @@ ul.sidenav li a:hover:not(.active) {
     font-size: 0;
 }
 
-input[type=text],
-select,
-textarea {
+#input-decimal,
+#input-exponent {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    resize: vertical;
+    display: block;
+    overflow: hidden;
+    resize: none;
 }
 
 label {
     padding: 12px 12px 12px 0;
     display: inline-block;
+    font-size: 1vw;
 }
 
 #result {
@@ -147,20 +149,21 @@ label {
     margin-top: 6px;
 }
 
-#fractional,
 #integral,
+#fractional,
 #answer,
 #normalised,
 #signvalue,
 #biasvalue,
 #mantissvalue,
 #exponevalue {
-    height: 20px;
+    display: block;
+    overflow: hidden;
+    resize: none;
+    width: 65%;
     font-size: 14pt;
-    max-width: fit-content;
     border-width: 2px;
     border-color: #288EC8;
-    width: 65%;
 }
 
 #eightrep {
@@ -169,9 +172,6 @@ label {
     height: 20px;
     max-width: fit-content;
 }
-
-
-/* Clear floats after the columns */
 
 .row:after {
     content: "";
@@ -195,7 +195,7 @@ label {
     ul.sidenav li a {
         float: left;
         padding: 15px;
-        font-size: 1.2vw
+        font-size: 1.5vw
     }
     #eightrep,
     #fractional,
@@ -206,8 +206,11 @@ label {
     #biasvalue,
     #mantissvalue,
     #exponevalue {
-        font-size: 13px;
-        width:90%;
+        font-size: 1.5vw;
+        width: 90%;
+    }
+    label {
+        font-size: 1.7vw;
     }
 }
 
@@ -216,7 +219,11 @@ label {
         width: 100%;
         margin-top: 0;
         font-size: 3vw;
-    }.col-25{font-size: 2vw;width: 90%}
+    }
+    .col-25 {
+        font-size: 2vw;
+        width: 90%
+    }
     #main-heading {
         font-size: 3vw;
     }
@@ -230,8 +237,9 @@ label {
         padding: 15px;
         font-size: 2.3vw
     }
-    #result,#input-decimal,#input-exponent 
-    .col-35,
+    #result,
+    #input-decimal,
+    #input-exponent .col-35,
     .mcol-35 {
         font-size: 2vw;
     }
@@ -251,12 +259,15 @@ label {
     #biasvalue,
     #mantissvalue,
     #exponevalue {
-        font-size: 13px;
-        width:90%;
+        font-size: 2vw;
+        width: 90%;
+    }
+    label {
+        font-size: 1.8vw;
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
     .flex-container {
         display: block;
     }
@@ -319,9 +330,9 @@ label {
         height: 8vw;
         font-size: 3.8vw
     }
-    #input-decimal,#input-exponent {
-        height: 45px;
-        width:140%;
+    #input-decimal,
+    #input-exponent {
+        width: 140%;
     }
     #main-heading {
         font-size: 5vw;
@@ -365,16 +376,23 @@ label {
         font-size: 3vw;
         margin-top: 8%
     }
+    label {
+        font-size: 3vw;
+    }
 }
-@media screen and (max-width: 396px){
-    #input-decimal,#input-exponent {
-        height: 7%;
+
+@media screen and (max-width: 396px) {
+    #input-decimal,
+    #input-exponent {
         width: 160%;
         margin-top: 10%;
-        font-size:2.5vw;
+        font-size: 2.7vw;
     }
-    .col-25{width:190%}
-} 
+    .col-25 {
+        width: 190%
+    }
+}
+
 @media screen and (max-width: 240px) {
     .user-inputs {
         width: 100%
@@ -401,10 +419,10 @@ label {
         font-size: 4vw;
     }
     input[type=text],
-    #input-decimal,#input-exponent {
-        height: 10%;
+    #input-decimal,
+    #input-exponent {
         font-size: 4vw;
-        width:255%;
+        width: 255%;
     }
     .mflex-container {
         display: block;
