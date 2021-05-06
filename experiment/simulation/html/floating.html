@@ -3,75 +3,58 @@
 <title>Floating Point Representation</title>
 
 <head>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
     <link rel="stylesheet" type="text/css" href="../css/floating.css">
-    <link rel="stylesheet" type="text/css" href="../css/co.css">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 </head>
 
 <body>
     <div class="container">
-        <div id="main-heading">Floating Point Numbers Representation Simulator</div>
-        <ul class="sidenav">
-            <li><a href="../index.html">Decimal to Floating point</a></li>
-            <li><a class="active">Floating Point Numbers</a></li>
-        </ul>
-        <div class="content">
-            <div class="flex-container">
-                <div class="user_enters">
-                    <div class="col-25">
-                        <label for="fname">Floating Number  </label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="input-decimal" name="Decimal" placeholder="Enter the Number">
-                    </div>
-                </div>
-                <span class="br"></span>
-                <div class="buttons">
-                    <input onclick="convert(0)" id="number" type="button" value="Submit">
-                    <span class="cond"></span>
-                    <input onclick="hello(0)" id="number" type="button" value="Reset">
-                </div>
+        <br>
+        <div id="message" value="message"></div>
+        <br>
+        <div class="dropdown">
+            <button class="float-dropbtn">Simulations</button>
+            <div class="dropdown-content">
+                <a href="../index.html">Decimal to Floating point</a>
+                <a href="#home">Floating Point Numbers</a>
             </div>
         </div>
-        <span class="br"></span>
-        <div class="boxee">
-            <form action="">
-                <div class="line-container">
-                    <span class="line arrow-right"></span>
-
+        <div class="float-content">
+            <div class="front">
+                <div class="float-enters">
+                    <div class="front-info1">
+                        <label id="float-label" for="fname">Floating Number  </label>
+                    </div>
+                    <div class="front-info2">
+                        <input type="text" id="input-float" name="Float" placeholder="Enter the Number" onclick="forMessage(event)" onkeypress="submitMessage(event)">
+                    </div>
                 </div>
-            </form>
-            <span class="brl"></span>
-            <form action="">
-                <div class="line-container">
-                    <span class="line arrow-right"></span>
+                <div class="sides"></div>
+                <div class="buttons">
+                    <input onclick="convert(event)" id="float-number" type="button" value="Submit">
+                    <input onclick="reset(event)" id="float-number" type="button" value="Reset">
                 </div>
-            </form>
-            <span class="brl"></span>
-            <form action="">
-                <div class="line-container">
-                    <span class="line arrow-right"></span>
-                </div>
-            </form>
+            </div>
             <span class="brl"></span>
             <div class="taginfo">
                 <span class="dotG"></span> <label>Normalised</label>
                 <span class="hrl"></span>
                 <span class="dotB"></span> <label> De-Normalised</label>
             </div>
-            <div class="bit-table">
+            <div class="bit-table m-auto pt-5 table-responsive">
                 <table align="right" id="four-bit-table">
                     <thead>
                         <tr>
-                            <th scope="col" id="me">Exponent</th>
-                            <th id="ef" scope="col">Manitissa</th>
+                            <th scope="col">Exponent</th>
+                            <th scope="col">Manitissa</th>
                             <th scope="col">No zero</th>
                             <th scope="col">Abrupt</th>
-                            <th id="ab" scope="col">Denorm</th>
+                            <th scope="col">Denorm</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -190,10 +173,10 @@
                     </tbody>
                 </table>
             </div>
-
         </div>
     </div>
-    <script src="../js/floating-point.js"></script>
+    </div>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
