@@ -1,3 +1,8 @@
+.container {
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
 .float-content {
     margin-left: 5%;
     padding: 1px 16px;
@@ -147,23 +152,19 @@ table th {
     }
     .front-info1 {
         font-size: 3vw;
-        margin-left: -17%;
+        margin-left: -7%;
     }
     .front-info2 {
         margin-left: 18%;
     }
     .buttons {
-        margin-left: -17%;
+        margin-left: -7%;
     }
     #float-number {
         font-size: 1.8vw;
     }
-    .line-container {
-        width: 50%;
-        margin-left: -17%;
-    }
     .float-dropbtn {
-        margin-left: -45%;
+        margin-left: 0%;
         font-size: 2vw;
     }
     .taginfo {
@@ -197,10 +198,6 @@ table th {
     .front-info1 {
         margin-left: 5%;
         width: 80%;
-    }
-    .line-container {
-        width: 90%;
-        margin-left: 5%;
     }
     #input-float {
         font-size: 2.99vw;
@@ -270,5 +267,17 @@ table th {
     .taginfo {
         margin-top: 10%;
         margin-bottom: -30%;
+    }
+    #input-float {
+        width: 70%;
+        font-size: 3.5vw;
+    }
+    .dotB,
+    .dotG {
+        height: 15px;
+        width: 15px;
+    }
+    #message {
+        margin-right: 15%;
     }
 }
