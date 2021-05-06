@@ -211,20 +211,6 @@ table th {
 }
 
 @media screen and (max-width:419px) {
-    #float-number {
-        font-size: 3.8vw;
-        width: 20%;
-        margin-top: 2%;
-    }
-    .float-dropbtn {
-        margin-left: 38%;
-        font-size: 4vw;
-        margin-bottom: 4%;
-    }
-    #four-bit-table {
-        width: 20%;
-        margin-right: -3%;
-    }
     .taginfo {
         margin-top: -12%;
         margin-left: 3%;
@@ -235,9 +221,54 @@ table th {
         font-size: 2.4vw;
     }
     #input-float {
-        font-size: 2.8vw;
+        font-size: 2.9vw;
     }
     .front-info2 {
         width: 50%;
+    }
+    .float-content {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    #float-number {
+        font-size: 3.8vw;
+        width: 20%;
+        margin-top: 2%;
+    }
+    .float-dropbtn {
+        margin-left: 38%;
+        font-size: 4vw;
+        margin-bottom: 4%;
+    }
+}
+
+@media screen and (max-width:419px) and (min-width:350px) {
+    #four-bit-table {
+        width: 100%;
+        margin-right: -10%;
+        margin-left: 0%;
+    }
+}
+
+@media screen and (max-width:349px) and (min-width:316px) {
+    table {
+        width: 100%;
+        margin-right: -25%;
+        margin-left: 0%;
+        border-width: 1px;
+    }
+}
+
+@media screen and (max-width:315px) {
+    #four-bit-table {
+        width: 100%;
+        margin-right: -35%;
+        margin-left: 0%;
+        border-width: 1px;
+        margin-top: 6%;
+    }
+    .taginfo {
+        margin-top: 10%;
+        margin-bottom: -30%;
     }
 }
