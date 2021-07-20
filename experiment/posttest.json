@@ -1,5 +1,5 @@
 [{
-        "question": "Can zero be represented using normalized representation?",
+        "question": "1. Can zero be represented using normalized representation?",
         "answers": {
             "a": "Yes",
             "b": "No",
@@ -9,7 +9,7 @@
         "correctAnswer": "b"
     },
     {
-        "question": "Which of the following is true for floating number 0.3?",
+        "question": "2. Which of the following is true for floating number 0.3?",
         "answers": {
             "a": "Only 5-bit binary Normalised representation is possible",
             "b": "5-bit binary Denormalised representation is possible",
@@ -18,4 +18,5 @@
         },
         "correctAnswer": "a"
     }
+
 ]
