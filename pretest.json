@@ -1,0 +1,22 @@
+[{
+        "question": "1. Consider the decimal number 15.75. How can we convert this entire number (both the integer and fractional parts) to binary?",
+        "answers": {
+            "a": "Repeated multiplication to convert the fractional part (0.75).",
+            "b": "Repeated division to convert the integer part (15)",
+            "c": "Repeated division to convert the integer part (15), Repeated multiplication to convert the fractional part (0.75) and then combine both parts.",
+            "d": "None of the aobve"
+        },
+        "correctAnswer": "c"
+    },
+    {
+        "question": "2. In  32 bit IEEE Format Floating Point the Sign bit equals",
+        "answers": {
+            "a": "1 when the number is negative and is 0 when the number is positive.",
+            "b": "0 when the number is negative and is 1 when the number is positive.",
+            "c": "0 when the number is negative and is 0 when the number is positive.",
+            "d": "All of the above"
+        },
+        "correctAnswer": "a"
+    }
+
+]
