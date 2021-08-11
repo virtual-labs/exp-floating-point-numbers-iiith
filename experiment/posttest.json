@@ -1,0 +1,21 @@
+[{
+        "question": "1. Can zero be represented using normalized representation?",
+        "answers": {
+            "a": "Yes",
+            "b": "No",
+            "c": "Sometimes",
+            "d": "Information is not sufficient"
+        },
+        "correctAnswer": "b"
+    },
+    {
+        "question": "2. Which of the following is true for floating number 0.3?",
+        "answers": {
+            "a": "Only 5-bit binary Normalised representation is possible",
+            "b": "5-bit binary Denormalised representation is possible",
+            "c": "It's Exponent is 00, Mantissa is 00 and Denorm is 0",
+            "d": "Both b and c"
+        },
+        "correctAnswer": "a"
+    }
+]

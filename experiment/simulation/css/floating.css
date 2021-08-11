@@ -1,0 +1,283 @@
+.container {
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+.float-content {
+    margin-left: 5%;
+    padding: 1px 16px;
+    height: 100%;
+    margin-right: 2%;
+}
+
+.front-info1 {
+    width: 30%;
+    margin-left: 0%;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.float-enters {
+    display: flex;
+}
+
+.sides {
+    display: block;
+    margin-right: 1em;
+}
+
+.buttons {
+    display: flex;
+}
+
+.line-container {
+    display: flex;
+    width: 35%;
+}
+
+.line {
+    flex-grow: 1;
+    height: 1.5px;
+    background: black;
+    position: relative;
+}
+
+.line.arrow-right:after {
+    position: absolute;
+    content: '';
+    bottom: -10px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 20px solid black;
+}
+
+.line.arrow-left:after {
+    position: absolute;
+    content: '';
+    top: -10px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid black;
+}
+
+table {
+    border: 2px solid #ccc;
+    border-collapse: collapse;
+    margin-right: 25%;
+    padding: 0;
+    width: 45%;
+    border-width: medium;
+    line-height: 190%;
+    border-color: #675839;
+    min-width: 130px;
+    margin-top: 0%;
+}
+
+table tr {
+    background-color: #f8f8f8;
+    border: 2.5px solid #07010c;
+}
+
+table td {
+    font-size: 85%;
+    text-align: center;
+    position: relative;
+    border: 1.25px solid #110101;
+}
+
+table th {
+    font-size: 85%;
+    text-align: center;
+    border: 2px solid #0f0101;
+}
+
+.taginfo {
+    display: flex;
+    margin-top: -10%;
+    margin-left: 30%;
+}
+
+.dotG {
+    height: 25px;
+    width: 25px;
+    background-color: rgb(164, 198, 82);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dotB {
+    height: 25px;
+    width: 25px;
+    background-color: #288EC8;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+@media screen and (max-width:1407px) and (min-width:1200px) {
+    table {
+        margin-top: -2%;
+        width: 55%;
+        margin-right: 14%;
+    }
+    .taginfo {
+        margin-top: -12%;
+    }
+}
+
+@media screen and (max-width:1199px) and (min-width:992px) {
+    table {
+        margin-top: -4%;
+        width: 60%;
+        margin-right: 10%;
+    }
+    .front-info1 {
+        font-size: 2vw;
+    }
+    .taginfo {
+        margin-top: -14%;
+    }
+}
+
+@media screen and (max-width:991px) and (min-width:851px) {
+    table {
+        margin-top: -6%;
+        width: 73%;
+        margin-right: -3%;
+    }
+    .front-info1 {
+        font-size: 3vw;
+        margin-left: -7%;
+    }
+    .front-info2 {
+        margin-left: 18%;
+    }
+    .buttons {
+        margin-left: -7%;
+    }
+    #float-number {
+        font-size: 1.8vw;
+    }
+    .float-dropbtn {
+        margin-left: 0%;
+        font-size: 2vw;
+    }
+    .taginfo {
+        margin-top: -16%;
+    }
+}
+
+@media screen and (max-width:850px) and (min-width:420px) {
+    .taginfo {
+        margin-top: -2%;
+        margin-left: 3%;
+        margin-bottom: -20%;
+    }
+    table {
+        margin-top: 10%;
+        width: 90%;
+        margin-left: 6%;
+        margin-right: 5%;
+    }
+    .buttons {
+        margin-left: 5%;
+    }
+    #float-number {
+        font-size: 2.5vw;
+        width: 20%
+    }
+    .float-dropbtn {
+        margin-left: 50%;
+        font-size: 3vw;
+    }
+    .front-info1 {
+        margin-left: 5%;
+        width: 80%;
+    }
+    #input-float {
+        font-size: 2.99vw;
+    }
+    #float-label {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width:419px) {
+    .taginfo {
+        margin-top: -12%;
+        margin-left: 3%;
+        margin-bottom: -20%;
+    }
+    .front-info1 {
+        width: 60%;
+        font-size: 2.4vw;
+    }
+    #input-float {
+        font-size: 2.9vw;
+    }
+    .front-info2 {
+        width: 50%;
+    }
+    .float-content {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    #float-number {
+        font-size: 3.8vw;
+        width: 20%;
+        margin-top: 2%;
+    }
+    .float-dropbtn {
+        margin-left: 38%;
+        font-size: 4vw;
+        margin-bottom: 4%;
+    }
+}
+
+@media screen and (max-width:419px) and (min-width:350px) {
+    #four-bit-table {
+        width: 100%;
+        margin-right: -10%;
+        margin-left: 0%;
+    }
+}
+
+@media screen and (max-width:349px) and (min-width:316px) {
+    table {
+        width: 100%;
+        margin-right: -25%;
+        margin-left: 0%;
+        border-width: 1px;
+    }
+}
+
+@media screen and (max-width:315px) {
+    #four-bit-table {
+        width: 100%;
+        margin-right: -35%;
+        margin-left: 0%;
+        border-width: 1px;
+        margin-top: 6%;
+    }
+    .taginfo {
+        margin-top: 10%;
+        margin-bottom: -30%;
+    }
+    #input-float {
+        width: 70%;
+        font-size: 3.5vw;
+    }
+    .dotB,
+    .dotG {
+        height: 15px;
+        width: 15px;
+    }
+    #message {
+        margin-right: 15%;
+    }
+}
