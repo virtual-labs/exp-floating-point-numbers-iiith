@@ -1,4 +1,4 @@
-## What are floating point numbers
+#### What are floating point numbers
 
 As the name implies, floating point numbers are numbers that contain
 floating decimal points. For example, the numbers 5.5, 0.001, and
@@ -10,7 +10,7 @@ calculation." Older computers used to have a separate floating point
 unit (FPU) that handled these calculations, but now the FPU is
 typically built into the computer's CPU.
 
-## Floating-Point Format
+#### Floating-Point Format
 
 Computers store floating point numbers in a specific format . As our
 aim is to maximize the range of numbers that can be stored .FPUs
@@ -23,24 +23,24 @@ standard IEEE format of 32 bit representation .
 <br></br>
 <img src="images/normalised.png" alt="normalised representation" style="height: 13vw; width:64.5vw;"/>
 
-### **Exponent Field**
+#### **Exponent Field**
 
 ->  8 - Bits Long<br>
 ->   Determines The Range Of Numbers That Can be Represented<br>
 ->   Increasing The Bits Will Increase The Range , Not Precision
  ->   To Cover For -ve Numbers , exp = 127 + real exp
 
-### **Sign Bit**
+#### **Sign Bit**
 -> 1- Bit Long<br>
 ->  Dtermines The +ve or -ve number
 ->   1 = -ve Number      0 =  +ve Number
 
-### **Mantissa Field**
+#### **Mantissa Field**
 -> 23 - Bits Long<br>
 ->  Determines the precision of Numbers<br>
 -> Increasing bits Will Increase precision, not range.
 
-# Consequence #1: Values are unevenly spaced
+#### Consequence #1: Values are unevenly spaced
 
 -> Imagine we only had 6 bits for each floating-point number
      (1 sign, 3 mantissa, 2 exponent)
@@ -54,7 +54,7 @@ standard IEEE format of 32 bit representation .
 <img src="images/uneven.png" alt="uneven" style="height: 50vw; width:50vw;"/>
 <br></br>
 
-# Consequence #2: Roundoff errors
+#### Consequence #2: Roundoff errors
 
   -> Our system can represent 6, and it can represent ¼, but not 5¾
 
