@@ -1,0 +1,15 @@
+
+/home/runner/work/exp-floating-point-numbers-iiith/exp-floating-point-numbers-iiith/experiment/simulation/js/main.js
+   13:5   warning  'flagu' is assigned a value but never used    no-unused-vars
+   16:10  warning  'forMessage' is defined but never used        no-unused-vars
+   25:10  warning  'submitMessage' is defined but never used     no-unused-vars
+   44:10  warning  'reset' is defined but never used             no-unused-vars
+   86:10  warning  'convert' is defined but never used           no-unused-vars
+  161:12  warning  Unexpected constant condition                 no-constant-condition
+  173:16  warning  Unexpected constant condition                 no-constant-condition
+  191:16  warning  Unexpected constant condition                 no-constant-condition
+  265:5   warning  'bit_rep' is assigned a value but never used  no-unused-vars
+  368:10  warning  'resize' is defined but never used            no-unused-vars
+
+✖ 10 problems (0 errors, 10 warnings)
+

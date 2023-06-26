@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<title>Floating Point Representation</title>
+
+<head>
+    <link rel="stylesheet" href="./css/main.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div class="container">
+        <br>
+        <div id="message" value="message"></div>
+        <br>
+        <div class="dropdown">
+            <button class="dropbtn">Simulations</button>
+            <div class="dropdown-content">
+                <a href="#home">Decimal to Floating point</a>
+                <a href="./html/floating.html">Floating Point Numbers</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="user_enters">
+                <div class="both-inputs">
+                    <div class="col-25">
+                        <label id="inp" for="fname">DECIMAL NUMBER  </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="input-decimal" name="Decimal" placeholder="Enter the No.">
+                    </div>
+                </div>
+                <div class="both-inputs">
+                    <div class="col-25">
+                        <label id="inp" for="lname">BITS FOR EXPONENT</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="input-exponent" name="Exponent" placeholder="Enter the bits" onclick="forMessage(event)" onkeyup="submitMessage(event)">
+                    </div>
+                </div>
+                <span class="br"></span>
+                <div class="row">
+                    <input onclick="convert(event)" id="number" type="button" value="Submit">
+                    <input onclick="reset(event)" id="number" type="button" value="Reset">
+                </div>
+            </div>
+            <div id="result-container">
+                <span class="hr"></span>
+                <!--
+				-->
+                <h3 id="result"></h3>
+                <div class="frowf">
+                    <div class="adj-res">
+                        <div class="col-35">
+                            <label for="8 bit-binary" id="8-bit label"></label>
+                        </div>
+                        <table id="eightrep">
+                        </table>
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div class="rowf">
+                        <div class="adj-res">
+                            <div class="col-35">
+                                <label for="Integral Part Representation" id="integral label"></label>
+                            </div>
+                            <div class="col-95" id="integral Representation">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rowf">
+                        <div class="adj-res">
+                            <div class="col-35">
+                                <label for="Fractional Part Representation" id="fractional label"> </label>
+                            </div>
+                            <div class="col-95" id="fractional Representation">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div class="rowf">
+                        <div class="adj-res">
+                            <div class="col-35">
+                                <label for="Number Part Representation" id="number label"></label>
+                            </div>
+                            <div class="col-95" id="number Representation">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rowf">
+                        <div class="adj-res">
+                            <div class="col-35">
+                                <label for="Normalised Representation" id="normalised label"></label>
+                            </div>
+                            <div class="col-95" id="normalised Representation">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mflex-container">
+                    <div class="rowf">
+                        <div class="adj-res">
+                            <div class="mcol-35">
+                                <label for="Sign" id="sign label"></label>
+                            </div>
+                            <div class="col-95" id="sign">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rowf">
+                        <div class="adj-res">
+                            <div class="mcol-35">
+                                <label for="Bias" id="bias label"></label>
+                            </div>
+                            <div class="col-95" id="bias">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mflex-container">
+                    <div class="rowf">
+                        <div class="adj-res">
+                            <div class="mcol-35">
+                                <label for="Mantiss" id="mantiss label"></label>
+                            </div>
+                            <div class="col-95" id="mantiss">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rowf">
+                        <div class="adj-res">
+                            <div class="mcol-35">
+                                <label for="Expone" id="expone label"></label>
+                            </div>
+                            <div class="col-95" id="expone">
+                            </div>
+                            <span class="br"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+    </script>
+<script src="../assets/js/iframeResize.js"></script></body>
+
+</html>
